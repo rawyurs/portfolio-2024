@@ -6,26 +6,30 @@ import Services from "./components/services/Services"
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
+import Hero2 from "./components/hero/Hero2";
 
 const App = () => {
   return (
     <div>
       <Cursor />
-      <section id="Homepage">
+      <section id="about">
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
+      <section>
+        <Hero2 />
+      </section>
+      <section id="skills">
+        <Parallax type="skills" />
       </section>
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
+      <section id="portfolio">
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">
+      <section id="contact">
         <Contact />
       </section>
     </div>

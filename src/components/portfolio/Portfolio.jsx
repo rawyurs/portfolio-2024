@@ -5,41 +5,51 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id: 1,
-        title: "React Commerce",
-        img: "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae atque quia placeat vitae reprehenderit id dignissimos tempora sit! Maxime quia blanditiis harum quaerat voluptate assumenda asperiores at, sed deleniti!",
+        title: "inStay",
+        img: "./capa_frente.png",
+        link: "https://instay1.netlify.app/",
+        desc: "inStay is a travel website that allows users to explore and book local accommodation, while at the same time being recommended restaurants close to the accommodation they are planning to book, in order to experience local flavours.",
     },
     {
         id: 2,
-        title: "Next.js Blog",
-        img: "https://images.pexels.com/photos/20923044/pexels-photo-20923044/free-photo-of-alvorecer-amanhecer-aurora-panorama.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae atque quia placeat vitae reprehenderit id dignissimos tempora sit! Maxime quia blanditiis harum quaerat voluptate assumenda asperiores at, sed deleniti!",
+        title: "Bookid",
+        img: "./capa-bookid.png",
+        link: "https://www.figma.com/design/1L4jA2tzfP57TDWq8thGII/BOOKID?node-id=163%3A2&t=YS42tPeYtqtM4Qcr-1",
+        desc: "Bookid is a platform for creating interactive digital books, essentially aimed at children in order to provide a more entertaining and engaging reading experience than conventional text-only books. In addition has the functionality for children to create their own books by adding their own content to the platform, such as images and sounds.",
     },
     {
         id: 3,
-        title: "Vanilla JS APP",
-        img: "https://images.pexels.com/photos/21369952/pexels-photo-21369952/free-photo-of-comida-alimento-refeicao-madeira.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae atque quia placeat vitae reprehenderit id dignissimos tempora sit! Maxime quia blanditiis harum quaerat voluptate assumenda asperiores at, sed deleniti!",
+        title: "Top Indian Movies",
+        img: "./capa-indian-movies.png",
+        link: "https://www.example.com/instay",
+        desc: "Top Indian Movies is an Indian film website that allows you to list and filter films from a provided database. The website includes login and user registration mechanisms with password hashing for security. In addition, I have implemented extra features that allow users to comment on films and administrators to insert/edit new films with the functionality to add or change a cover (image) via the insert form.",
     },
     {
         id: 4,
-        title: "Music App",
-        img: "https://images.pexels.com/photos/21369952/pexels-photo-21369952/free-photo-of-comida-alimento-refeicao-madeira.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae atque quia placeat vitae reprehenderit id dignissimos tempora sit! Maxime quia blanditiis harum quaerat voluptate assumenda asperiores at, sed deleniti!",
+        title: "Aventura no Espaço com a Laika",
+        img: "./teste1.png",
+        link: "https://www.example.com/instay",
+        desc: "Aventura no Espaço com a Laika is an interactive children's book, adapted to the theme of space and inspired by the RTP’s show, UAU. The dog Laika acts as an educator, teaching content about space, specifically the solar system, in an interactive way, through images accompanied by an audio guide. In addition to the book, there is also a quizz to test the knowledge acquired from reading it and a section devoted to the story of Laika dog.",
+    },
+    {
+        id: 5,
+        title: "Minimercado da Xana",
+        img: "./capa1.png",
+        link: "https://www.example.com/instay",
+        desc: "This project was a challenge to apply our recently acquired front-end skills (HTML, CSS and Bootstrap). To do this, we chose to bring to life a project by a cookery content creator (Cozinha da Xana), taking the idea further by also adding the online mini-market aspect.",
     },
 ];
 
 
 const Single = ({ item }) => {
-
-    const ref = useRef()
+    const ref = useRef();
 
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start start" , "end start"]
+        offset: ["start start", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [-100, 100])
+    const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
 
     return (
         <section>
@@ -48,16 +58,19 @@ const Single = ({ item }) => {
                     <div className="imageContainer" ref={ref}>
                         <img src={item.img} alt="" />
                     </div>
-                    <motion.div className="textContainer" style={{y}}>
+                    <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                            <button>Visit Website</button>
+                        </a>
                     </motion.div>
                 </div>
             </div>
         </section>
-    )
+    );
 };
+
 
 const Portfolio = () => {
 
@@ -78,7 +91,7 @@ const Portfolio = () => {
     return (
         <div className="portfolio" ref={ref}>
             <div className="progress">
-                <h1>Featured works</h1>
+                <h1>My Projects</h1>
                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>
             </div>
             {items.map(item => (

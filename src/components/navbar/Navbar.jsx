@@ -6,14 +6,12 @@ const Navbar = () => {
     return (
         <div className="navbar">
             {/* SideBar */}
-            <SideBar/>
+            <SideBar />
             <div className="wrapper">
-                <motion.span initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}} transition={{duration:0.5}}>João Neves</motion.span>
+                <motion.span initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}></motion.span>
                 <div className="social">
-                    <a href="#"><img src="/facebook.png"></img></a>
-                    <a href="#"><img src="/instagram.png"></img></a>
-                    <a href="#"><img src="/youtube.png"></img></a>
-                    <a href="#"><img src="/dribbble.png"></img></a>
+                    <a href="https://www.linkedin.com/in/joaoopneves/"><img src="/linkedin2.svg"></img></a>
+                    <a href="https://www.behance.net/joaopneves"><img src="/behance2.svg"></img></a>
                 </div>
             </div>
         </div>

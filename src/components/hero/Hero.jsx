@@ -10,8 +10,8 @@ const textVariants = {
         x: 0,
         opacity: 1,
         transition: {
-            duration:1,
-            staggerChildren:0.1,
+            duration: 1,
+            staggerChildren: 0.1,
         },
     },
     scrollButton: {
@@ -30,37 +30,34 @@ const sliderVariants = {
     animate: {
         x: "-220%",
         transition: {
-            repeat:Infinity,
-            repeatType:"mirror",
-            duration:20,
-            staggerChildren:0.1,
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 20,
+            staggerChildren: 0.1,
         },
     },
 };
 
 const Hero = () => {
     return (
-        <div className="hero">
-            <div className="wrapper">
-                <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
-                    <motion.h2 variants={textVariants}>João Neves</motion.h2>
-                    <motion.h1 variants={textVariants}>Web Developer and UI Designer</motion.h1>
-                    <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants}>See the Latest Works</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+        <div>
+            <div className="hero">
+                <div className="wrapper">
+                    <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
+                        <motion.div variants={textVariants} className="buttons">
+                            <motion.button type="button" variants={textVariants}><a href="#portfolio">Portfolio</a></motion.button>
+                            <motion.button type="button" variants={textVariants}><a href="#contact">Contact-me</a></motion.button>
+                        </motion.div>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
-                </motion.div>
-            </div>
-            <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-                Writer Content Creator Influencer
-            </motion.div>
-            <div className="imageContainer">
-                <img src="/hero.png" alt="">
-
-                </img>
+                </div>
+                <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate"></motion.div>
+                <div className="imageContainer">
+                    <img src="/exp2.png" alt="" />
+                </div>
             </div>
         </div>
+
     )
 }
 

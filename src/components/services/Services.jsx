@@ -24,45 +24,30 @@ const Services = () => {
 
 
     const ref = useRef()
-    const isInView = useInView(ref, {margin:"-100px"})
+    const isInView = useInView(ref, { margin: "-100px" })
 
     return (
         <motion.div className="services" variants={variants} initial="initial" /* whileInView="animate" */ ref={ref} animate={"animate"}>
-            <motion.div className="textContainer" variants={variants}>
-                <p>I focus on helping your brand grow
-                    <br />and move forward</p>
-                <hr />
-            </motion.div>
             <motion.div className="titleContainer" variants={variants}>
                 <div className="title">
                     <img src="/people.webp" alt="" />
-                    <h1><motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas</h1>
+                    <h1><motion.b whileHover={{ color: "#2400FF" }}>Areas</motion.b> of</h1>
                 </div>
                 <div className="title">
-                    <h1><motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.</h1>
-                    <button>WHAT WE DO?</button>
+                    <h1><motion.b whileHover={{ color: "#2400FF" }}>Expertise</motion.b></h1>
+                    <button>WHAT DO I DO?</button>
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variants}>
                 <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-                    <button>Go</button>
+                    <h2>Web Development</h2>
+                    <img className="code-img" src="./code.svg" alt="" />
+                    <p>HTML, SCSS, JavaScript, PHP, React.js, MySQL, Git, PhpMyAdmin</p>
                 </motion.div>
                 <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-                    <button>Go</button>
-                </motion.div>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-                    <button>Go</button>
-                </motion.div>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-                    <button>Go</button>
+                    <h2>UI/UX Design</h2>
+                    <img className="code-img" src="./pen1.svg" alt="" />
+                    <p>Interface Design and Human-Computer Interaction (HCI)</p>
                 </motion.div>
             </motion.div>
         </motion.div>
