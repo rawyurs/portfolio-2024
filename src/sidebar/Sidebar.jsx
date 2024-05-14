@@ -8,7 +8,7 @@ import ToggleButton from "./toggleButton/ToggleButton.jsx";
 const SideBar = () => {
   const [open, setOpen] = useState(false)
 
-
+//ola
   const variants = {
     open: {
       clipPath: "circle(1200px at 50px 50px)",
