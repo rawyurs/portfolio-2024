@@ -42,6 +42,9 @@ const Hero = () => {
     return (
         <div>
             <div className="hero">
+                <div className="editar-imagem">
+                    <img src="./exp6.png" alt="" />
+                </div>
                 <div className="wrapper">
                     <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
                         <motion.div variants={textVariants} className="buttons">

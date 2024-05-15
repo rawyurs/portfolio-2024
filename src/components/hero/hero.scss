@@ -5,12 +5,17 @@
   overflow: hidden;
   background: #dbeaff;
   position: relative;
-  background: url("./exp6.png") no-repeat left top;
-  background-size: 20rem;
-  background-repeat: no-repeat;
-  background-position: cover;
+  img{
+    width: 65%;
+  }
+  //background: url("./exp6.png") no-repeat left top;
+  //background-size: 20rem;
+  //background-repeat: no-repeat;
+  //background-position: cover;
 
-
+  .editar-imagem {
+    width: 100%;
+  }
   .wrapper {
     max-width: 1366px;
     height: 100%;
