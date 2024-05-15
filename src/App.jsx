@@ -19,16 +19,12 @@ const App = () => {
       <section>
         <Hero2 />
       </section>
+
       <section id="skills">
-        <Parallax type="skills" />
-      </section>
-      <section>
         <Services />
       </section>
-      <section id="portfolio">
-        <Parallax type="portfolio" />
-      </section>
-      <Portfolio />
+      <span id="portfolio" ><Portfolio /></span>
+      
       <section id="contact">
         <Contact />
       </section>
@@ -38,3 +34,16 @@ const App = () => {
 
 
 export default App;
+
+/*
+
+
+<section id="skills">
+<Parallax type="skills" />
+</section>
+      
+<section id="portfolio">
+<Parallax type="portfolio" />
+</section>
+
+*/
