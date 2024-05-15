@@ -55,7 +55,7 @@ const Hero2 = () => {
                         <br></br>
 
                         <p className="paragrafos-pequenos">mar 2024 - now</p>
-                        <h4> <span>👨🏻‍💻</span> Member of Communication and Image Department - Scientific Junior Value</h4>
+                        <h4> <span>👨🏻‍💻</span> Member of Communication and Image Department - <a href="https://www.scientific.pt/">Scientific Junior Value</a> </h4> 
                         <p className="paragrafos-grandes"> Junior Enterprise - University of Aveiro</p>
                     </div>
                     <div className="text-center">

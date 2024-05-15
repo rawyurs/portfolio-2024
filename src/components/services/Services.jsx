@@ -30,7 +30,7 @@ const Services = () => {
         <motion.div className="services" variants={variants} initial="initial" /* whileInView="animate" */ ref={ref} animate={"animate"}>
             <motion.div className="titleContainer" variants={variants}>
                 <div className="title">
-                    <img src="/people.webp" alt="" />
+                    <img src="/pr1.webp" alt="" />
                     <h1><motion.b whileHover={{ color: "#2400FF" }}>Areas</motion.b> of</h1>
                 </div>
                 <div className="title">

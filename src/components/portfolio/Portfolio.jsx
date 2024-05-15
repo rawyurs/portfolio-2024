@@ -33,8 +33,8 @@ const items = [
         id: 4,
         title: "Top Indian Movies",
         img: "./capa-indian-movies.png",
-        buttonText: "Offline",
-        link: "#",
+        buttonText: "Unavailable",
+        link: "",
         desc: "Top Indian Movies is an Indian film website that allows you to list and filter films from a provided database. The website includes login and user registration mechanisms with password hashing for security. In addition, I have implemented extra features that allow users to comment on films and administrators to insert/edit new films with the functionality to add or change a cover (image) via the insert form.",
     },
     {
@@ -42,7 +42,7 @@ const items = [
         title: "Aventura no Espaço com a Laika",
         img: "./teste1.png",
         buttonText: "Visit Website",
-        link: "https://www.example.com/instay",
+        link: "https://aventura-no-espaco-com-laika.netlify.app/",
         desc: "Aventura no Espaço com a Laika is an interactive children's book, adapted to the theme of space and inspired by the RTP’s show, UAU. The dog Laika acts as an educator, teaching content about space, specifically the solar system, in an interactive way, through images accompanied by an audio guide. In addition to the book, there is also a quizz to test the knowledge acquired from reading it and a section devoted to the story of Laika dog.",
     },
     {
@@ -50,7 +50,7 @@ const items = [
         title: "Minimercado da Xana",
         img: "./capa1.png",
         buttonText: "Visit Website",
-        link: "https://www.example.com/instay",
+        link: "https://minimercado-xana.netlify.app/",
         desc: "This project was a challenge to apply our recently acquired front-end skills (HTML, CSS and Bootstrap). To do this, we chose to bring to life a project by a cookery content creator (Cozinha da Xana), taking the idea further by also adding the online mini-market aspect.",
     },
 ];
