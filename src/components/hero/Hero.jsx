@@ -28,11 +28,10 @@ const sliderVariants = {
         x: -0,
     },
     animate: {
-        x: "-220%",
+        x: "0%",
         transition: {
-            repeat: Infinity,
             repeatType: "mirror",
-            duration: 20,
+            duration: 3,
             staggerChildren: 0.1,
         },
     },
@@ -42,17 +41,9 @@ const Hero = () => {
     return (
         <div>
             <div className="hero">
-                <div className="editar-imagem">
+                <motion.div className="editar-imagem" variants={sliderVariants} initial="initial" animate="animate">
                     <img src="./exp6.png" alt="" />
-                </div>
-                <div className="wrapper">
-                    <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
-                        <motion.div variants={textVariants} className="buttons">
-                            <motion.button type="button" variants={textVariants}><a href="#portfolio">Portfolio</a></motion.button>
-                            <motion.button type="button" variants={textVariants}><a href="#contact">Contact-me</a></motion.button>
-                        </motion.div>
-                    </motion.div>
-                </div>
+                </motion.div>
                 <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate"></motion.div>
                 <div className="imageContainer">
                     <img src="/exp2.png" alt="" />

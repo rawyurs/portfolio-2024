@@ -7,6 +7,12 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17rem;
+  }
+
 
   h1 {
     color: #2e2f33;
@@ -33,6 +39,7 @@
       font-size: 20px;
       color: gray;
       text-align: right;
+      
     }
 
     hr {
@@ -136,18 +143,22 @@
 
       }
 
-
-      @include mobile {
-        border: none;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
+      p{
+        @include mobile {
+        text-align: center;
+        }
       }
 
-      p {
-        @include mobile {
-          display: none;
-        }
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        gap: 20px;
+        padding: 10px;
+        
       }
 
       button {
