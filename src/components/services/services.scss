@@ -1,7 +1,7 @@
 @import "../../app.scss";
 
 .services {
-  background-color: #DBEAFF;
+  background-color: #dbeaff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,6 @@
     flex-direction: column;
     margin-top: 17rem;
   }
-
 
   h1 {
     color: #2e2f33;
@@ -39,7 +38,6 @@
       font-size: 20px;
       color: gray;
       text-align: right;
-      
     }
 
     hr {
@@ -62,6 +60,7 @@
 
     @include mobile {
       width: 100%;
+      margin-top: 10rem;
     }
 
     .title {
@@ -120,12 +119,11 @@
     max-width: 1366px;
     margin: auto;
     margin-bottom: 8rem;
-    
-    
 
     @include mobile {
       flex-direction: column;
       width: 100%;
+      margin-top: 20rem;
     }
 
     .box {
@@ -137,18 +135,16 @@
       display: flex;
       align-items: center;
       color: #2e2f33;
-      
-      .code-img{
-        width: 30%;
 
+      .code-img {
+        width: 30%;
       }
 
-      p{
+      p {
         @include mobile {
-        text-align: center;
+          text-align: center;
         }
       }
-
 
       @include mobile {
         display: flex;
@@ -158,7 +154,6 @@
         border: none;
         gap: 20px;
         padding: 10px;
-        
       }
 
       button {
@@ -175,7 +170,7 @@
           color: #2e2f33;
           width: 50%;
           padding: 5px;
-        } 
+        }
       }
     }
   }
